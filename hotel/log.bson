@@ -1,0 +1,13 @@
+{
+    $jsonSchema: {
+        bsonType: "object",
+        properties: {
+            employee_id: {
+                bsonType: "string"
+            },
+            access_date_time: {
+                bysonType: "date"
+            }
+        }
+    }
+}
