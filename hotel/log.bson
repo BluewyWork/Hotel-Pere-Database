@@ -1,19 +1,19 @@
 {
-    $jsonSchema: {
-        bsonType: "object",
-        properties: {
-            access_level: {
-                "enum": [
-                    "customer",
-                    "employee"
-                ]
-            },
-            employee_id: {
-                bsonType: "string"
-            },
-            access_date_time: {
-                bysonType: "date"
-            }
-        }
+  $jsonSchema: {
+    bsonType: 'object',
+    properties: {
+      access_level: {
+        'enum': [
+          'customer',
+          'employee'
+        ]
+      },
+      employee_id: {
+        bsonType: 'string'
+      },
+      access_date_time: {
+        bsonType: 'date'
+      }
     }
+  }
 }
