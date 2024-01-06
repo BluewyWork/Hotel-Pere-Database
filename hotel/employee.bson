@@ -1,0 +1,25 @@
+{
+  $jsonSchema: {
+    bsonType: "object",
+    properties: {
+      id: {
+        bsonType: "string",
+      },
+      first_name: {
+        bsonType: "string",
+      },
+      last_name: {
+        bsonType: "string",
+      },
+      email: {
+        bsonType: "string",
+      },
+      phone_number: {
+        bsonType: "string",
+      },
+      access_level: {
+        enum: ["admin", "normal"],
+      },
+    },
+  },
+}
