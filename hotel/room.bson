@@ -1,0 +1,38 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    properties: {
+      id: {
+        bsonType: 'string'
+      },
+      number: {
+        bsonType: 'int'
+      },
+      section: {
+        bsonType: 'string'
+      },
+      price_per_night: {
+        bsonType: 'double'
+      },
+      bed: {
+        bsonType: 'object',
+        properties: {
+          size: {
+            'enum': [
+              'King',
+              'Queen',
+              'Peasant'
+            ]
+          },
+          type: {
+            'enum': [
+              'Leather',
+              'Feather',
+              'Aquatic'
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    description: '...',
+    properties: {
+      id: {
+        bsonType: 'string'
+      },
+      first_name: {
+        bsonType: 'string'
+      },
+      last_name: {
+        bsonType: 'string'
+      },
+      email: {
+        bsonType: 'string'
+      },
+      phone_number: {
+        bsonType: 'string'
+      },
+      bill: {
+        bsonType: 'object',
+        properties: {
+          cancellation_fee: {
+            bsonType: 'object',
+            properties: {
+              is_cancelled: {
+                bsonType: 'bool'
+              },
+              cancelled_date_time: {
+                bsonType: 'date'
+              },
+              fee: {
+                'enum': [
+                  'free',
+                  'x %',
+                  'total pay'
+                ]
+              }
+            }
+          },
+          room_id: {
+            bsonType: 'string'
+          },
+          check_in_date_time: {
+            bsonType: 'date'
+          },
+          check_out_date_time: {
+            bsonType: 'date'
+          },
+          promotional_pack: {
+            bsonType: 'object',
+            properties: {
+              id: {
+                bsonType: 'string'
+              },
+              name: {
+                bsonType: 'string'
+              },
+              price_multiplier: {
+                bsonType: 'double'
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
