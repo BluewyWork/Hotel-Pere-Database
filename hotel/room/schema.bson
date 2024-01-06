@@ -1,0 +1,25 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    required: [
+      'number',
+      'characteristics',
+      'reserved',
+      'type'
+    ],
+    properties: {
+      number: {
+        bsonType: 'int'
+      },
+      characteristic: {
+        bsonType: 'string'
+      },
+      reserved: {
+        bsonType: 'bool'
+      },
+      type: {
+        bsonType: 'string'
+      }
+    }
+  }
+}

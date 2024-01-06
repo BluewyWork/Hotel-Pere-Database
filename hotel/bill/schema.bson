@@ -1,0 +1,19 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    required: [
+      'nameUser',
+      'details'
+    ],
+    properties: {
+      name: {
+        bsonType: 'string',
+        description: 'Debe ser una cadena que represente el nombre de la factura.'
+      },
+      details: {
+        bsonType: 'string',
+        description: 'Debe ser una cadena que represente los detalles de la factura.'
+      }
+    }
+  }
+}
