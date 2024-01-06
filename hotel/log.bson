@@ -2,6 +2,12 @@
     $jsonSchema: {
         bsonType: "object",
         properties: {
+            access_level: {
+                "enum": [
+                    "customer",
+                    "employee"
+                ]
+            },
             employee_id: {
                 bsonType: "string"
             },
