@@ -2,9 +2,13 @@
   $jsonSchema: {
     bsonType: 'object',
     description: '...',
+    "required": ["DNI", "pass", "first_name", "last_name", "email", "phone_number"],
     properties: {
-      id: {
+      DNI: {
         bsonType: 'string'
+      },
+      pass: {
+        bsonType: "string",
       },
       first_name: {
         bsonType: 'string'
@@ -17,6 +21,10 @@
       },
       phone_number: {
         bsonType: 'string'
+      },
+       "image": {
+        "bsonType": "binData",
+        "description": "Datos binarios de la imagen"
       },
       bill: {
         bsonType: 'object',
@@ -39,7 +47,7 @@
               }
             }
           },
-          room_id: {
+          number: {
             bsonType: 'string'
           },
           check_in_date_time: {

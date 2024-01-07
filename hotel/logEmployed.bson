@@ -1,18 +1,16 @@
 {
   $jsonSchema: {
     bsonType: 'object',
+    required: ["DNI", "access_date_time", "description"]
     properties: {
-      access_level: {
-        'enum': [
-          'customer',
-          'employee'
-        ]
-      },
-      employee_id: {
+      DNI: {
         bsonType: 'string'
       },
       access_date_time: {
         bsonType: 'date'
+      },
+      description:{
+        bsonType: 'string'
       }
     }
   }
