@@ -1,8 +1,12 @@
 {
   $jsonSchema: {
     bsonType: "object",
+    "required": ["DNI", "pass", "first_name", "last_name", "email", "phone_number"],
     properties: {
-      id: {
+      DNI: {
+        bsonType: "string",
+      },
+      pass: {
         bsonType: "string",
       },
       first_name: {
@@ -17,9 +21,10 @@
       phone_number: {
         bsonType: "string",
       },
-      access_level: {
-        enum: ["admin", "normal"],
-      },
+      "admin": {
+      "type": "boolean",
+      "description": "Indica si el usuario tiene privilegios de administrador"
+      }
     },
   },
 }

@@ -2,9 +2,6 @@
   $jsonSchema: {
     bsonType: 'object',
     properties: {
-      id: {
-        bsonType: 'string'
-      },
       number: {
         bsonType: 'int'
       },
