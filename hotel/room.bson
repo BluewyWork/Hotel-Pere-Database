@@ -1,6 +1,7 @@
 {
   $jsonSchema: {
     bsonType: 'object',
+    required: ["number", "price_per_night", "description"],
     properties: {
       number: {
         bsonType: 'int'
@@ -10,6 +11,10 @@
       },
       price_per_night: {
         bsonType: 'double'
+      },
+      "image": {
+        "bsonType": "binData",
+        "description": "Datos binarios de la imagen"
       },
       bed: {
         bsonType: 'object',

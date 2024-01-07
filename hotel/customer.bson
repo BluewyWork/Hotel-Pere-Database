@@ -22,6 +22,10 @@
       phone_number: {
         bsonType: 'string'
       },
+       "image": {
+        "bsonType": "binData",
+        "description": "Datos binarios de la imagen"
+      },
       bill: {
         bsonType: 'object',
         properties: {

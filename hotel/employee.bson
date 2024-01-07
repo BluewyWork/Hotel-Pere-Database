@@ -1,7 +1,7 @@
 {
   $jsonSchema: {
     bsonType: "object",
-    "required": ["DNI", "pass", "first_name", "last_name", "email", "phone_number"],
+    "required": ["DNI", "pass", "first_name", "last_name", "email", "phone_number","admin"],
     properties: {
       DNI: {
         bsonType: "string",
@@ -20,6 +20,10 @@
       },
       phone_number: {
         bsonType: "string",
+      },
+       "image": {
+        "bsonType": "binData",
+        "description": "Datos binarios de la imagen"
       },
       "admin": {
       "type": "boolean",
