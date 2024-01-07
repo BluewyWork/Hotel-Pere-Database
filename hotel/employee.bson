@@ -1,7 +1,7 @@
 {
   $jsonSchema: {
     bsonType: "object",
-    "required": ["DNI", "pass", "first_name", "last_name", "email", "phone_number","admin"],
+    "required": ["DNI", "pass", "firstName", "lastName", "email", "phoneNumber","admin"],
     properties: {
       DNI: {
         bsonType: "string",
@@ -9,16 +9,16 @@
       pass: {
         bsonType: "string",
       },
-      first_name: {
+      firstName: {
         bsonType: "string",
       },
-      last_name: {
+      lastName: {
         bsonType: "string",
       },
       email: {
         bsonType: "string",
       },
-      phone_number: {
+      phoneNumber: {
         bsonType: "string",
       },
        "image": {

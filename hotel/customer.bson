@@ -2,7 +2,7 @@
   $jsonSchema: {
     bsonType: 'object',
     description: '...',
-    "required": ["DNI", "pass", "first_name", "last_name", "email", "phone_number"],
+    "required": ["DNI", "pass", "firstName", "lastName", "email", "phoneNumber"],
     properties: {
       DNI: {
         bsonType: 'string'
@@ -10,16 +10,16 @@
       pass: {
         bsonType: "string",
       },
-      first_name: {
+      firstName: {
         bsonType: 'string'
       },
-      last_name: {
+      lastName: {
         bsonType: 'string'
       },
       email: {
         bsonType: 'string'
       },
-      phone_number: {
+      phoneNumber: {
         bsonType: 'string'
       },
        "image": {
@@ -29,13 +29,13 @@
       bill: {
         bsonType: 'object',
         properties: {
-          cancellation_fee: {
+          cancellationStuff: {
             bsonType: 'object',
             properties: {
-              is_cancelled: {
+              isCancelled: {
                 bsonType: 'bool'
               },
-              cancelled_date_time: {
+              cancelledDateTime: {
                 bsonType: 'date'
               },
               fee: {
@@ -50,13 +50,13 @@
           number: {
             bsonType: 'string'
           },
-          check_in_date_time: {
+          checkInDateTime: {
             bsonType: 'date'
           },
-          check_out_date_time: {
+          checkOutDateTime: {
             bsonType: 'date'
           },
-          promotional_pack: {
+          promotionalPack: {
             bsonType: 'object',
             properties: {
               id: {
@@ -65,7 +65,7 @@
               name: {
                 bsonType: 'string'
               },
-              price_multiplier: {
+              priceMultiplier: {
                 bsonType: 'double'
               }
             }
