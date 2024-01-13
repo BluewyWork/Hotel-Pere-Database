@@ -1,15 +1,17 @@
 {
   $jsonSchema: {
     bsonType: 'object',
-    required: ["DNI", "accessDateTime", "description"]
     properties: {
-      DNI: {
+      _id: {
+        bsonType: 'objectId'
+      },
+      name: {
         bsonType: 'string'
       },
-      accessDateTime: {
-        bsonType: 'date'
+      role: {
+        bsonType: 'string'
       },
-      description:{
+      contact: {
         bsonType: 'string'
       }
     }
