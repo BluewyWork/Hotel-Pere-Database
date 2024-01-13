@@ -1,0 +1,29 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    properties: {
+      _id: {
+        bsonType: 'objectId'
+      },
+      customerId: {
+        bsonType: [
+          'objectId'
+        ]
+      },
+      totalAmount: {
+        bsonType: 'double'
+      },
+      items: {
+        bsonType: 'object',
+        properties: {
+          description: {
+            bsonType: 'string'
+          },
+          amount: {
+            bsonType: 'double'
+          }
+        }
+      }
+    }
+  }
+}

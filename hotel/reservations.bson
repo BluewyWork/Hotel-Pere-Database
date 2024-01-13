@@ -1,0 +1,32 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    properties: {
+      _id: {
+        bsonType: 'objectId'
+      },
+      customerId: {
+        bsonType: [
+          'objectId'
+        ]
+      },
+      roomId: {
+        bsonType: [
+          'objectId'
+        ]
+      },
+      checkIn: {
+        bsonType: 'date'
+      },
+      checkOut: {
+        bsonType: 'date'
+      },
+      status: {
+        'enum': [
+          'pending',
+          'confirmed'
+        ]
+      }
+    }
+  }
+}

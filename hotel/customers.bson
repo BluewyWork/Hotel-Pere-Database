@@ -1,0 +1,35 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    properties: {
+      _id: {
+        bsonType: 'objectId'
+      },
+      name: {
+        bsonType: 'string'
+      },
+      email: {
+        bsonType: 'string'
+      },
+      phone: {
+        bsonType: 'string'
+      },
+      reservations: {
+        bsonType: [
+          'array'
+        ],
+        items: {
+          bsonType: 'objectId'
+        }
+      },
+      bills: {
+        bsonType: [
+          'array'
+        ],
+        items: {
+          bsonType: 'objectId'
+        }
+      }
+    }
+  }
+}
