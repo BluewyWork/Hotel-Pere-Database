@@ -8,10 +8,13 @@
       name: {
         bsonType: 'string'
       },
-      role: {
+      admin: {
+        bsonType: 'bool'
+      },
+      password: {
         bsonType: 'string'
       },
-      contact: {
+      email: {
         bsonType: 'string'
       }
     }

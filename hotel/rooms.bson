@@ -2,9 +2,6 @@
   $jsonSchema: {
     bsonType: 'object',
     properties: {
-      _id: {
-        bsonType: 'objectId'
-      },
       number: {
         bsonType: 'int'
       },
@@ -14,28 +11,14 @@
       pricePerNight: {
         bsonType: 'double'
       },
-      image: {
-        bsonType: 'binData',
-        description: 'Datos binarios de la imagen'
+      reserved: {
+        bsonType: 'bool'
       },
-      bed: {
-        bsonType: 'object',
-        properties: {
-          size: {
-            'enum': [
-              'King',
-              'Queen',
-              'Peasant'
-            ]
-          },
-          type: {
-            'enum': [
-              'Leather',
-              'Feather',
-              'Aquatic'
-            ]
-          }
-        }
+      image: {
+        bsonType: 'string'
+      },
+      beds: {
+        bsonType: 'int'
       }
     }
   }

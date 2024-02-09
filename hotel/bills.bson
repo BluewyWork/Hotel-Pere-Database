@@ -5,16 +5,20 @@
       _id: {
         bsonType: 'objectId'
       },
-      customerId: {
-        bsonType: [
-          'objectId'
-        ]
+      idReservation: {
+        bsonType: 'string'
+      },
+      guestName: {
+        bsonType: 'string'
+      },
+      guestEmail: {
+        bsonType: 'string'
       },
       totalAmount: {
         bsonType: 'double'
       },
       items: {
-        bsonType: 'object',
+        bsonType: 'array',
         properties: {
           description: {
             bsonType: 'string'

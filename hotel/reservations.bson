@@ -5,14 +5,25 @@
       _id: {
         bsonType: 'objectId'
       },
-      customerId: {
+      guestId: {
+        bsonType: 'string'
+      },
+      guestName: {
+        bsonType: 'string'
+      },
+      guestEmail: {
         bsonType: [
-          'objectId'
+          'string'
         ]
       },
-      roomId: {
+      roomNumber: {
         bsonType: [
-          'objectId'
+          'int'
+        ]
+      },
+      pricePerNight: {
+        bsonType: [
+          'double'
         ]
       },
       checkIn: {
@@ -21,11 +32,8 @@
       checkOut: {
         bsonType: 'date'
       },
-      status: {
-        'enum': [
-          'pending',
-          'confirmed'
-        ]
+      reserved: {
+        bsonType: 'bool'
       }
     }
   }

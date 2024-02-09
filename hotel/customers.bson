@@ -11,24 +11,8 @@
       email: {
         bsonType: 'string'
       },
-      phone: {
+      password: {
         bsonType: 'string'
-      },
-      reservations: {
-        bsonType: [
-          'array'
-        ],
-        items: {
-          bsonType: 'objectId'
-        }
-      },
-      bills: {
-        bsonType: [
-          'array'
-        ],
-        items: {
-          bsonType: 'objectId'
-        }
       }
     }
   }
