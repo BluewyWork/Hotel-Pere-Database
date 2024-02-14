@@ -1,24 +1,41 @@
 {
   $jsonSchema: {
     bsonType: 'object',
+    required: [
+      'number',
+      'description',
+      'pricePerNight',
+      'beds',
+      'image',
+      'reservedDays'
+    ],
     properties: {
       number: {
-        bsonType: 'int'
+        bsonType: 'number',
+        description: 'Must be a number and is required'
       },
-      section: {
-        bsonType: 'string'
+      description: {
+        bsonType: 'string',
+        description: 'Must be a string and is required'
       },
       pricePerNight: {
-        bsonType: 'double'
-      },
-      reserved: {
-        bsonType: 'bool'
-      },
-      image: {
-        bsonType: 'string'
+        bsonType: 'number',
+        description: 'Must be a number and is required'
       },
       beds: {
-        bsonType: 'int'
+        bsonType: 'number',
+        description: 'Must be a number and is required'
+      },
+      image: {
+        bsonType: 'string',
+        description: 'Must be a string and is required'
+      },
+      reservedDays: {
+        bsonType: 'array',
+        items: {
+          bsonType: 'date'
+        },
+        description: 'Must be an array of dates and is required'
       }
     }
   }

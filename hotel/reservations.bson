@@ -1,39 +1,53 @@
 {
   $jsonSchema: {
     bsonType: 'object',
+    required: [
+      'guestName',
+      'guestSurname',
+      'guestEmail',
+      'roomNumber',
+      'pricePerNight',
+      'checkIn',
+      'checkOut',
+      'reserved',
+      'creationDate'
+    ],
     properties: {
-      _id: {
-        bsonType: 'objectId'
-      },
-      guestId: {
-        bsonType: 'string'
-      },
       guestName: {
-        bsonType: 'string'
+        bsonType: 'string',
+        description: 'Must be a string and is required'
+      },
+      guestSurname: {
+        bsonType: 'string',
+        description: 'Must be a string and is required'
       },
       guestEmail: {
-        bsonType: [
-          'string'
-        ]
+        bsonType: 'string',
+        description: 'Must be a string and is required'
       },
       roomNumber: {
-        bsonType: [
-          'int'
-        ]
+        bsonType: 'number',
+        description: 'Must be a number and is required'
       },
       pricePerNight: {
-        bsonType: [
-          'double'
-        ]
+        bsonType: 'number',
+        description: 'Must be a number and is required'
       },
       checkIn: {
-        bsonType: 'date'
+        bsonType: 'date',
+        description: 'Must be a date and is required'
       },
       checkOut: {
-        bsonType: 'date'
+        bsonType: 'date',
+        description: 'Must be a date and is required'
       },
       reserved: {
-        bsonType: 'bool'
+        bsonType: 'bool',
+        description: 'Must be a boolean and is required'
+      },
+      creationDate: {
+        bsonType: 'date',
+        description: 'Must be a date and is required'
       }
     }
   }

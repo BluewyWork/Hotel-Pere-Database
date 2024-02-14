@@ -1,18 +1,33 @@
 {
   $jsonSchema: {
     bsonType: 'object',
+    required: [
+      'name',
+      'surname',
+      'email',
+      'image',
+      'password'
+    ],
     properties: {
-      _id: {
-        bsonType: 'objectId'
-      },
       name: {
-        bsonType: 'string'
+        bsonType: 'string',
+        description: 'Must be a string and is required'
+      },
+      surname: {
+        bsonType: 'string',
+        description: 'Must be a string and is required'
       },
       email: {
-        bsonType: 'string'
+        bsonType: 'string',
+        description: 'Must be a string and is required'
+      },
+      image: {
+        bsonType: 'string',
+        description: 'Must be a string and is required'
       },
       password: {
-        bsonType: 'string'
+        bsonType: 'string',
+        description: 'Must be a string and is required'
       }
     }
   }
