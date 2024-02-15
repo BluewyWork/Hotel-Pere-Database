@@ -5,7 +5,6 @@
       'name',
       'surname',
       'email',
-      'image',
       'password'
     ],
     properties: {
