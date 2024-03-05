@@ -1,30 +1,22 @@
 {
   $jsonSchema: {
     bsonType: 'object',
-    required: [
-      'number',
-      'description',
-      'pricePerNight',
-      'beds',
-      'image',
-      'reservedDays'
-    ],
     properties: {
       number: {
-        bsonType: 'number',
-        description: 'Must be a number and is required'
+        bsonType: 'int',
+        description: 'Must be an integer and is required'
       },
       description: {
         bsonType: 'string',
         description: 'Must be a string and is required'
       },
       pricePerNight: {
-        bsonType: 'number',
-        description: 'Must be a number and is required'
+        bsonType: 'double',
+        description: 'Must be a double and is required'
       },
       beds: {
-        bsonType: 'number',
-        description: 'Must be a number and is required'
+        bsonType: 'int',
+        description: 'Must be an integer and is required'
       },
       image: {
         bsonType: 'string',
@@ -33,9 +25,27 @@
       reservedDays: {
         bsonType: 'array',
         items: {
-          bsonType: 'date'
+          bsonType: 'object',
+          required: [
+            'checkIn',
+            'checkOut'
+          ],
+          properties: {
+            _reservationId: {
+              bsonType: 'objectId',
+              description: 'Must be an ObjectId and is required'
+            },
+            checkIn: {
+              bsonType: 'date',
+              description: 'Must be a Date and is required'
+            },
+            checkOut: {
+              bsonType: 'date',
+              description: 'Must be a Date and is required'
+            }
+          }
         },
-        description: 'Must be an array of dates and is required'
+        description: 'Must be an array of objects with _reservationId, checkIn, and checkOut fields, and is required'
       }
     }
   }

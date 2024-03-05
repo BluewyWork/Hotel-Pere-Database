@@ -25,6 +25,9 @@
         bsonType: 'string',
         description: 'Must be a string and is required'
       },
+      image: {
+        bsonType: 'string'
+      },
       password: {
         bsonType: 'string',
         description: 'Must be a string and is required'
